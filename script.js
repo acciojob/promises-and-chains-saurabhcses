@@ -7,7 +7,7 @@ let Button = document.getElementById("btn");
 Form.addEventListener("submit", function(event) {
     event.preventDefault();
     if (Name.value.trim() === "" || age.value.trim() === "") {
-        alert("Please enter valid details.");
+       alert("Please enter valid details");
         return;
     }
     let agepromise = new Promise((resolve, reject) => {
